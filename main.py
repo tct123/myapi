@@ -15,9 +15,11 @@ app = fa.FastAPI()
 async def all_items():
     return mylist
 
+
 @app.get("/itemslength")
 async def all_items():
-    return [len(mylist)]
+    return [{len(mylist)}]
+
 
 @app.get("/items/{item_id}")
 async def get_item(item_id: int):
