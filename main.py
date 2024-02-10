@@ -18,7 +18,7 @@ async def all_items():
 
 @app.get("/itemslength")
 async def all_items():
-    return [{len(mylist)}]
+    return [{"length":len(mylist)}]
 
 
 @app.get("/items/{item_id}")
