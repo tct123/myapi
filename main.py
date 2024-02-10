@@ -2,10 +2,10 @@ import fastapi as fa
 import pydantic
 
 mylist = [
-    {"name": "Computer1", "price_in_euro": 100, "typ": "hardware"},
-    {"name": "Computer2", "price_in_euro": 100, "typ": "hardware"},
-    {"name": "Computer3", "price_in_euro": 100, "typ": "hardware"},
-    {"name": "Computer4", "price_in_euro": 100, "typ": "hardware"},
+    {"name": "Computer 1", "price_in_euro": 100, "typ": "hardware"},
+    {"name": "Computer 2", "price_in_euro": 100, "typ": "hardware"},
+    {"name": "Computer 3", "price_in_euro": 100, "typ": "hardware"},
+    {"name": "Computer 4", "price_in_euro": 100, "typ": "hardware"},
 ]
 
 app = fa.FastAPI()
