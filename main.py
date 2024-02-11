@@ -31,4 +31,4 @@ async def get_item(item_id: int):
 
 @app.get("/test/{myinput}")
 def test(myinput):
-    return [{"input": myinput}]
+    return {"input": myinput}
