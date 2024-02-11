@@ -18,7 +18,7 @@ async def all_items():
 
 @app.get("/itemslength")
 async def all_items():
-    return [{"length":len(mylist)}]
+    return [{"length": len(mylist)}]
 
 
 @app.get("/items/{item_id}")
@@ -27,3 +27,8 @@ async def get_item(item_id: int):
         return [{"name": "toolong", "price_in_euro": 0, "typ": "toolong"}]
     else:
         return mylist[item_id]
+
+
+@app.get("/test/{myinput}")
+def test(myinput):
+    return [{"input": myinput}]
