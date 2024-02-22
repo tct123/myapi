@@ -26,7 +26,7 @@ async def get_item(item_id: int):
     if item_id >= len(mylist):
         return [{"name": "toolong", "price_in_euro": 0, "typ": "toolong"}]
     if item_id <= 0:
-        return[{"name": "Wrong value", "price_in_euro": 0, "typ": "Wrong value"}]
+        return {"msg": "error"}
     else:
         return mylist[item_id]
 
