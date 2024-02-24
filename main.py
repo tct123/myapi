@@ -24,7 +24,7 @@ async def all_items():
 @app.get("/items/{item_id}")
 async def get_item(item_id: int):
     if item_id >= len(mylist):
-        return [{"name": "toolong", "price_in_euro": 0, "typ": "toolong"}]
+        return {"name": "toolong", "price_in_euro": 0, "typ": "toolong"}
     if item_id <= 0:
         return {"msg": "error"}
     else:
